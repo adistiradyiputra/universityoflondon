@@ -17,6 +17,7 @@ export class Tab1Page{
     private storage : Storage,
     private navCtrl : NavController
   ) {}
+  
   ngOnInit(): void{
     this.storage.get('isLoggedIn').then((val) => {
       console.log(val);

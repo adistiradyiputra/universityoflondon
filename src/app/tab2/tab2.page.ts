@@ -18,6 +18,7 @@ export class Tab2Page implements OnInit  {
 
   ngOnInit() {
   }
+  
   logout(){
     this.storage.clear();
     this.navCtrl.navigateRoot('/welcome');

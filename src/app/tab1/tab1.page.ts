@@ -9,7 +9,7 @@ import { Storage } from '@ionic/storage';
 })
 export class Tab1Page{
 
-  public name: string;
+  // public name: string;
   public photo: string;
   public qr: string;
 
@@ -21,7 +21,7 @@ export class Tab1Page{
   ngOnInit(): void{
     this.storage.get('isLoggedIn').then((val) => {
       console.log(val);
-      this.name = val.nama;
+      // this.name = val.nama;
       this.photo = `https://apimobprog.adistiradyiputra.my.id/foto/${val.foto}`;
       this.qr = `https://apimobprog.adistiradyiputra.my.id/qrcode/${val.qrcode}`;
     });  

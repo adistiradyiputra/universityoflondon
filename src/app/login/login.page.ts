@@ -82,7 +82,7 @@ export class LoginPage implements OnInit {
         } else {
         await loading.present();
         data = this.http.get(
-        'https://apimobprog.adistiradyiputra.my.id/api/login/' +
+        'http://localhost/api/login/' +
           this.email +
           '/' +
           this.password

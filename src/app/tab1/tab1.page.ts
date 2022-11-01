@@ -22,8 +22,8 @@ export class Tab1Page{
     this.storage.get('isLoggedIn').then((val) => {
       console.log(val);
       // this.name = val.nama;
-      this.photo = `https://apimobprog.adistiradyiputra.my.id/foto/${val.foto}`;
-      this.qr = `https://apimobprog.adistiradyiputra.my.id/qrcode/${val.qrcode}`;
+      this.photo = `http://localhost/ci3-for-mobprog/foto/${val.foto}`;
+      this.qr = `http://localhost/ci3-for-mobprog/qrcode/${val.qrcode}`;
     });  
   }
 
